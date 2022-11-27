@@ -9,8 +9,8 @@ function App() {
       <NavBar />
       <ItemListContainer greeting={"Próximamente: Vivero Orgánico"} />
       <div className="areaAlert">
-      <Alert severity="success" color="warning" style={{fontSize: '1rem'}}>
-        <AlertTitle style={{fontSize: '1.2rem'}}>Mientras tanto...</AlertTitle>
+      <Alert severity="success" color="warning" style={{fontSize: '1.1rem'}}>
+        <AlertTitle style={{fontSize: '1.25rem'}}>Mientras tanto...</AlertTitle>
          Podés ir preparando todas tus macetas y un espacio con mucho sol!
       </Alert>
       </div>
