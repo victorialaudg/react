@@ -1,0 +1,30 @@
+.navbar-container{
+    width:100%;
+    min-height:10vh;
+    background-color: #fffdf6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 35px;
+}
+.navbar-list li{
+    list-style-type: none;
+    display: inline-flex;
+    font-size: 1.1rem;
+    line-height:1;
+    border-bottom:2px solid #036303;
+    padding: 5px 10px 7px;
+    margin: 10px;
+    cursor: pointer;
+    transition:all 0.5s ease;
+}
+.navbar-list li:hover{
+    background-color: #036303; 
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.navbar-logo img{
+    height: 100%;
+    max-height:65px;
+}
