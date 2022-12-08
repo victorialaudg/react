@@ -2,8 +2,10 @@ import "./ItemListContainer.css"
 
 const ItemListContainer = ( {greeting} ) => {
   return (
-    <h2 className="bienvenida">{greeting}</h2>
+    <div>
+      <h2 className="bienvenida">{greeting}</h2>
+    </div>
   )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
