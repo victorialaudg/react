@@ -1,2 +1,6 @@
-.card{width: 95%;max-width:300px;border:1px solid gray;border-radius:4px;margin:10px;padding:7px;background-color: #fff;}
+.card{width: 95%;max-width:300px;border:1px solid gray;border-radius:4px;margin:10px;padding:7px;background-color: #fff;text-align: center;}
 .card img{width:100%;max-width:100%;}
+.card h2{color:#121212;}
+.card a{display: block;text-align:center;padding:10px;background-color: green;color: #fff;text-decoration: none;text-transform: uppercase;font-weight:700;margin:10px 0;border-radius: 4px;}
+.card .price,.card .name{margin:10px 0;}
+.card .name{color: rgb(2, 75, 2);}

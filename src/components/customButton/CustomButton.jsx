@@ -9,7 +9,7 @@ const CustomButton = ({texto, counter, setCounter})=> {
     return(
         <>
             <button onClick={sumar}>{texto}</button>
-            <h2>{/*counter*/}</h2>
+            <h2>{counter}</h2>
         </>
     );
 };

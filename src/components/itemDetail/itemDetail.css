@@ -1,0 +1,7 @@
+.item_detail{width:100%;max-width: 1200px;margin:20px auto;}
+.item_detail .col{width:90%;margin:auto;}
+.item_detail .col img{width:100%;max-width:500px;border-radius: 4px;}
+.item_detail .col:first-of-type{text-align: center;}
+@media(min-width:768px){
+    .item_detail .col{width:calc(50% - 50px);display: inline-block;vertical-align: top;margin:10px;} 
+}
