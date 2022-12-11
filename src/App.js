@@ -1,7 +1,7 @@
-import Alert from '@mui/material/Alert';
-import AlertTitle from '@mui/material/AlertTitle';
-import ItemCount from './components/itemCount/ItemCount';
-import CustomButton from './components/customButton/CustomButton';
+//import Alert from '@mui/material/Alert';
+//import AlertTitle from '@mui/material/AlertTitle';
+//import ItemCount from './components/itemCount/ItemCount';
+//import CustomButton from './components/customButton/CustomButton';
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 import {NavBar} from "./components/navBar/NavBar";
@@ -30,7 +30,7 @@ function App() {
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/category" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
-          <Route path="/cart" element={<h3>Hola!</h3>} />
+          <Route path="/cart" element={<h3>Hola! Este es el carrito</h3>} />
           <Route path="*" element={<h3>Ups... Esta URL no existe</h3>} />
         </Routes>
       </BrowserRouter>

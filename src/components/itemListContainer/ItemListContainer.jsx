@@ -25,7 +25,7 @@ const ItemListContainer = ( {greeting} ) => {
   useEffect(()=>{
 
     const productosFiltered= products.filter( productos => productos.category === categoryId)
-    console.log("filtrados: ", productosFiltered)
+    //console.log("filtrados: ", productosFiltered)
 
     const task = new Promise((resolve,reject)=>{
       setTimeout(()=>{
@@ -42,7 +42,7 @@ const ItemListContainer = ( {greeting} ) => {
 
   },[categoryId])
 
-  console.log(items)
+  //console.log(items)
 
   const onAdd = (cantidad) =>{
     console.log("Agregaste: ", cantidad);
