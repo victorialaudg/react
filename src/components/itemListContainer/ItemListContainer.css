@@ -4,3 +4,15 @@
     margin:10vh 0;
     font-size:1.8rem;
 }
+.light{
+    width: 100%;
+    height:50vh;
+    background-color: lightblue;
+    color: black;
+}
+.dark{
+    width: 100%;
+    height:50vh;
+    background-color: black;
+    color: white;
+}
