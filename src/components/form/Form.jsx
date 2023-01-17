@@ -72,7 +72,7 @@ const Form = ( {cart, getTotalPrice, setOrderId, clearCart} ) => {
         else if((email != repiteemail) || (!verificaemail(email)) || (!verificaemail(repiteemail))){
               Swal.fire({
                   title: "E-mail inválido",
-                  text: 'Verificá haber completado ambos campos de e-mail, y en formato correcto. ¡No olvides el @ ni el punto!',
+                  text: 'Verificá haber completado ambos campos de e-mail con el mismo correo, y en formato correcto. ¡No olvides el @ ni el punto!',
                   icon: "error",
                   button: "Ok",
                 })
