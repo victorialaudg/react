@@ -12,7 +12,7 @@
 ### VARIABLES DE ENTORNO
 
 - Por el momento, las variales de entonto se dejaron expuestas hasta la aprobación final de este proyecto.
-- Posteriormente habrá que configurarlas, creando un archivo .env siguiendo el modelo a continuación (NO HACERLO POR EL MOMENTO):
+- Posteriormente habrá que configurarlas, creando un archivo .env siguiendo el modelo a continuación (Es importante NO HACERLO POR EL MOMENTO):
 - REACT_APP_API_KEY=
 - REACT_APP_AUTH_DOMAIN=
 - REACT_APP_PROJECT_ID=
