@@ -1,24 +1,28 @@
-//import CustomButton from "../customButton/CustomButton";
-import {useState} from "react"
+import { Button } from "@mui/material"
+import {useState, useEffect} from "react"
 
 
-const ItemCount = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, initial = 0, onAdd}) => {
 
   const [counter, setCounter] = useState(initial)
   const [countermessage,setCountermessage] = useState("")
+
+  useEffect( () =>{
+    setCounter(initial)
+  }, [initial])
 
   const sumar = () =>{
     if(counter < stock ){
       setCounter(counter+1);
       setCountermessage("");
-    }else{
-      console.log("Superaste 10 items y se agotó el stock disponible");
+    }
+    else{
       setCountermessage("Superaste 10 items y se agotó el stock disponible");
     }
   }
 
   const restar = () =>{
-    if(counter > initial ){
+    if(counter > 1 ){
       setCounter(counter-1);
       setCountermessage("");
     }
@@ -29,12 +33,27 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
 
   return (
-    <div>
-        <h2>{counter}</h2>
+    <div className="itemCount">
+        <h2>Agregaste: {counter}</h2>
         <p>{countermessage}</p>
-        <button onClick={sumar}>Sumar</button>
-        <button onClick={restar}>Restar</button>
-        <button onClick={()=> onAdd(counter)}>Agregar al Carrito</button>
+        <div className="areabtns">
+          <Button variant="contained" onClick={restar} 
+              style={{
+                    backgroundColor: "#fff",
+                    color: "#036303"
+              }}>
+            -
+          </Button>
+          <Button variant="contained" onClick={() => onAdd(counter)}>
+            Agregar al carrito
+          </Button>
+          <Button variant="contained" onClick={sumar} style={{
+                    backgroundColor: "#fff",
+                    color: "#036303"
+              }}>
+            +
+          </Button>
+        </div>
     </div>
   )
 }

@@ -1,0 +1,33 @@
+.card-item{
+    width: 95%;
+    max-width:300px;
+    display:inline-block;
+    border-radius:4px;
+    margin:10px;
+    padding:7px;
+    text-align: center;
+}
+.card-item img{
+    width:100%;
+    max-width:100%;
+}
+.card-item h2{
+    color:#121212;
+}
+.card-item a{
+    display: block;
+    text-align:center;
+    padding:10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:700;
+    margin:10px 0;
+    border-radius: 4px;
+}
+.card-item .price,.card-item .name{
+    margin:10px 0;
+}
+.card-item .name{
+    color: rgb(2, 75, 2);
+}

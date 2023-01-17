@@ -1,16 +1,34 @@
 import {Link} from "react-router-dom"
-import styles from "./Item.module.css"
+import "./Item.css"
+import {Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography, Box} from '@mui/material'
+
 
 const Item = ({element}) => {
   return (
-    <div className={styles.card} key={element.name}>
-        <h2 className={styles.name}>{element.name}</h2>
-        <img src={element.img} alt="" />
-        <h3 className={styles.price}>${element.price}</h3>
-        <p className={styles.category}>Planta de {element.category}</p>
-        <Link to={`/item/${element.id}`}>Ver detalle</Link>
-    </div>
-  )
+    <div className="card-item">
+      <Card sx={{ maxWidth: 345 }} sm={6} md={6} lg={4} spacing={2}>
+        <CardMedia
+          sx={{ height: 300 }}
+          image={element.img}
+          title="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div" color="primary">
+            {element.name}
+          </Typography>
+          <Typography variant="body1" color="text.secondary">
+            {element.description}
+          </Typography>
+          <Typography variant="body1" color="secondary">
+            ${element.price}.-
+          </Typography>
+        </CardContent>
+        <CardActions style={{display: "flex", justifyContent: "center"}}>
+        <Link to={`/itemDetail/${element.id}`}><Button size="large" variant="contained">Ver detalle</Button></Link>
+        </CardActions>
+      </Card>
+      </div>
+  );
 }
 
 export default Item

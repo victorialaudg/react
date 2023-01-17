@@ -10,9 +10,15 @@
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
 }
-body{background-color: #b9d47a;}
+body{
+  background-color: #b9d47a;
+}
 
-.areaAlert{width:85%;max-width:550px;margin:30px auto;padding:20px;}
+.areaAlert{
+  width:85%;
+  max-width:550px;
+  margin:30px auto;
+  padding:20px;
+}

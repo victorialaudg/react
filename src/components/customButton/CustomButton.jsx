@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const CustomButton = ({texto, counter, setCounter})=> {
 
     const sumar = () => {

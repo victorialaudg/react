@@ -1,1 +1,6 @@
-.container-cards{width:90%;max-width:1200px;margin:auto;display: flex;text-align: center;justify-content: center;}
+.container-cards{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    text-align: center;
+}

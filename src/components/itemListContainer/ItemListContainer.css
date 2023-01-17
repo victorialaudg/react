@@ -4,7 +4,12 @@
     margin:10vh 0;
     font-size:1.8rem;
 }
-.light,.dark{width: 100%;padding:5px 15px;}
+.light,.dark{
+    width: 100%;
+    min-height:85vh;
+    padding:5px 15px;
+    position: relative;
+}
 .light{
     
     background-color: #e3f4cf;
@@ -13,4 +18,9 @@
 .dark{
     background-color: black;
     color: white;
+}
+#btn-changeMode{
+    position: absolute; 
+    top:20px;
+    right:20px;
 }
